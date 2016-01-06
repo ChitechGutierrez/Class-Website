@@ -194,6 +194,13 @@ LANDING PAGE STUFF - Header
   margin-top: -50px;
 }
 
+.dateText{
+  background:rgba(230,230,230,0.8);
+  width:70%;
+  margin:0 auto;
+  border-radius:10px;
+}
+
 #landing_page_header h1{
   font-size: 3rem;
 }
