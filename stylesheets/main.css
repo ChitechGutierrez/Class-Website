@@ -17,69 +17,41 @@ GENERAL
 
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
 
 body{
   font-family: 'caviar_dreamsregular';
-  text-align: center;
   font-weight:bold;
+  width: 100%;
+  height: 100%;
 }
 
 a{
   text-decoration: none;
 }
 
-content{
-  display: block;
-  max-width: 960px;
-  margin: 0 auto;
-
-}
-
-#cover {
-    background: url("http://www.aveva.com/Images/ajax-loader.gif") no-repeat scroll center center #333333;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
 h4{
     font-size:2.75rem;
 }
 
+/* TEMPLATE SECTION - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+
 /**********************************
 HEADING - All Regular Pages
 ***********************************/
-header{
-  background-size: cover;
-  height:300px;
-  padding-top:20px;
-  padding-bottom: 50px;
-  margin-bottom: 10px;
-  margin-top: -50px;
-  max-width: 100%;
-}
 
-.mma2_block_header{
-    background: url("http://i1119.photobucket.com/albums/k625/chitechg/carving_zpsbqgjqmyd.jpg") no-repeat center;
-}
-
-.mma2_5th_header{
-    background: url("http://i1119.photobucket.com/albums/k625/chitechg/ipod_banner_zpsefa5b75b.jpg") no-repeat center;
-    
-}
-
-.capstone_header{
-    background: url("http://i1119.photobucket.com/albums/k625/chitechg/statue_zpszyk7usz0.jpg") no-repeat center;
-}
-
-.page_title{
-    padding: 10px;
-    display: block;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-bottom:30px;
-    background: #C8C8C8;
-    border-radius:10px;
-}
 
 /**********************************
 NAVIGATION - All Regular Pages
@@ -89,89 +61,16 @@ NAVIGATION - All Regular Pages
 /**********************************
 MAIN CONTENT - All Regular Pages
 ***********************************/
-.text_box{
-	padding: 15px 30px;
-	font-family:inherit;
-	font-weight:normal;
-}
-
-.text_box p{
-	padding: 15px 30px;
-	font-family:"Helvetica", "Arial";
-}
-
-.intro{
-  margin: 30px 10px;
-  padding:20px 10px;
-  font-size: 1.5em;
-}
-
-article{
-  padding:15px 30px;
-  border-radius:10px;
-}
-
-
-/*----- Accordion -----*/
-.accordion, .accordion * {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-}
-
-.accordion {
-	overflow:hidden;
-	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-	border-radius:3px;
-}
-
-/*----- Section Titles -----*/
-.accordion-section-title {
-	width:100%;
-	padding:15px;
-	display:inline-block;
-	border-bottom:1px solid #1a1a1a;
-	transition:all linear 0.15s;
-	/* Type */
-	font-size:1.200em;
-	text-shadow:0px 1px 0px #1a1a1a;
-}
-
-.accordion-section-title.active, .accordion-section-title:hover{
-	background:#4c4c4c;
-	/* Type */
-	text-decoration:none;
-}
-
-.accordion-section:last-child .accordion-section-title {
-	border-bottom:none;
-}
-
-/*----- Section Content -----*/
-.accordion-section-content {
-	padding:15px;
-	display:none;
-}
 
 /**********************************
 FOOTER - All Regular Pages
 ***********************************/
-#footer_image{
-  max-width: 70%;
-}
- footer{
-   margin-top:50px;
- }
+
 
 /**********************************
 PAGE: CONTACT
 ***********************************/
 
-.mail{
-    text-decoration:none;
-    list-style-type: none;
-    display:inline-block;
-}
 
 /**********************************
 LANDING PAGE STUFF - General
@@ -181,87 +80,17 @@ LANDING PAGE STUFF - General
 LANDING PAGE STUFF - Header
 ***********************************/
 
-#landing_page_logo{
-  max-width: 10rem;
-}
-
-.arrow{
-  display: inline-block;
-  padding-top:200px;
-  width:50px;
-}
-
-#landing_page_header{
-  background: url('http://i1119.photobucket.com/albums/k625/chitechg/photo-1420513777793-6b5b2c9ca530_zpsaw0zakam.jpg') no-repeat center;
-  background-size: cover;
-  height:600px;
-  padding-top:50px;
-  margin-top: -50px;
-}
-
-.dateText{
-  background:rgba(230,230,230,0.8);
-  width:70%;
-  margin:0 auto;
-  border-radius:10px;
-}
-
-#landing_page_header h1{
-  font-size: 3rem;
-}
-
-#landing_page_header h3{
-  font-size: 1.5rem;
-}
 
 /**********************************
 LANDING PAGE STUFF - Content
 ***********************************/
-#landing_page_content{
-  display: block;
-  max-width: 960px;
-  margin: 0 auto;
-}
 
-.landing_page_button, .landing_page_button_last{
-  width:90%;
-  height:200px;
-  margin:25px 5%;
-  font-size: 2rem;
-  padding: 50px 10px 10px 10px;
-  box-sizing: border-box;
-  box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, .6);
-  font-weight: bold;
-}
 
 /**********************************
 MEDIA QUIERIES - Full Screen Formating
 ***********************************/
 
-@media screen and (min-width: 480px) {
-  #landing_page_header{
-    height:600px;
-    padding-top:110px;
-  }
-  .arrow{
-    display: inline-block;
-    padding-top:180px;
-    width:50px;
-  }
-  .landing_page_button{
-    width:40%;
-    height: 200px;
-    float:left;
-  }
-  .landing_page_button_last{
-    clear:both;
-    height: 100px;
-    padding: 20px 10px 10px 10px;
-  }
-  header{
-    width: 100%;
-  }
-}
+
 /**********************************
 COLORS
   Orange: #FF6717
@@ -276,54 +105,28 @@ body {
   color: #333;
 }
 
-.intro{
-  background: #888888;
-  color: #C8C8C8;
-  font-weight: bold;
+.landing_intro_section{
+  background:#fff;
 }
 
-.intro a{
-  text-decoration:none;
-  color: #222222;
+.landing_section1{
+  background:#eee;
 }
 
-.text_box{
-  background: #C8C8C8;
-  color: #222222;
+.landing_section2{
+  background:#fff;
 }
 
-.landing_page_button, .landing_page_button_last{
-  background: #C8C8C8;
-  color: #FF6717;
+.landing_section3{
+  background:#eee;
 }
 
-#myNavbar{
-  color: #FF9717;
+.landing_section4{
+  background:#fff;
 }
 
-.page_title{
-    background: #C8C8C8;
-}
-
-
-footer{
-  background: #333;
-}
-
-.accordion {
-	background:#C8C8C8;
-}
-
-article{
-  background:#C8C8C8;
-}
-
-.accordion-section-title {
-	background:#333;
-	color:#C8C8C8;
-}
-.accordion-section-title.active, .accordion-section-title:hover {
-  color:#FF9717;
+.landing_section5{
+  background:#fff;
 }
 
 /*modifying bootstrap's css*/
