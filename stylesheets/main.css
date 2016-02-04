@@ -33,9 +33,6 @@ a{
   text-decoration: none;
 }
 
-h4{
-    font-size:2.75rem;
-}
 
 /* TEMPLATE SECTION - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -51,6 +48,10 @@ of those sections to manage the look and feel of the site. */
 /**********************************
 HEADING - All Regular Pages
 ***********************************/
+#landing_page_logo{
+    max-width: 10rem;
+}
+
 
 
 /**********************************
@@ -93,6 +94,7 @@ MEDIA QUIERIES - Full Screen Formating
 
 /**********************************
 COLORS
+  FF9717
   Orange: #FF6717
   Lighter Orange: #FF8B4F rgba(255, 139, 79, 1)
   Lightest Grey: #C8C8C8
@@ -101,32 +103,42 @@ COLORS
 ***********************************/
 
 body {
-  background: #FF9717;
+  background: #222222;
   color: #333;
 }
 
 .landing_intro_section{
   background:#fff;
+  background: url('https://picjumbo.imgix.net/P1010041.jpg?q=40&w=1650&sharp=30') no-repeat center;
+}
+
+.dateText{
+  background:rgba(230,230,230,0.8);
 }
 
 .landing_section1{
   background:#eee;
+  background: url('https://picjumbo.imgix.net/HNCK0726.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section2{
   background:#fff;
+  background: url('https://picjumbo.imgix.net/IMG_6923.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section3{
   background:#eee;
+  background: url('https://picjumbo.imgix.net/HNCK4161.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section4{
   background:#fff;
+  background: url('https://picjumbo.imgix.net/HNCK4151.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section5{
   background:#fff;
+  background: url('https://picjumbo.imgix.net/IMG_4780.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 /*modifying bootstrap's css*/
