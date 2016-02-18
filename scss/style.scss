@@ -24,6 +24,10 @@ a{
   text-decoration: none;
 }
 
+.center{
+  text-align:center !important;
+}
+
 
 /* TEMPLATE SECTION - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -58,6 +62,50 @@ MAIN CONTENT - All Regular Pages
   margin-bottom:20px;
   border-radius:10px;
 }
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+.accordion {
+	overflow:hidden;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	border-radius:3px;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-bottom:1px solid #1a1a1a;
+	transition:all linear 0.15s;
+	/* Type */
+	font-size:1.200em;
+	text-shadow:0px 1px 0px #1a1a1a;
+	background:#888;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover{
+	background:#eee;
+	/* Type */
+	text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:15px;
+	display:none;
+}
+
 
 /**********************************
 FOOTER - All Regular Pages
@@ -145,3 +193,5 @@ body > section > .container{
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
   background: #FF9717 !important;
 }
+
+
