@@ -83,9 +83,16 @@ MAIN CONTENT - All Regular Pages
   padding: 15px;
   display: none; }
 
+.gallery_thumbnail {
+  width: 75px;
+  height: 75px; }
+
 /**********************************
 FOOTER - All Regular Pages
 ***********************************/
+footer {
+  text-align: center; }
+
 /**********************************
 PAGE: CONTACT
 ***********************************/
