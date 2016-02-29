@@ -1,13 +1,4 @@
-$(window).load(function() {
-	$('#cover').fadeOut(500);
-
-});
-
-
-$("#landing_page_logo").hide();
-$("#landing_page_logo").fadeIn(1600, function() {});
-
-
+// ACCORDION
 jQuery(document).ready(function() {
 	function close_accordion_section() {
 		jQuery('.accordion .accordion-section-title').removeClass('active');
@@ -33,6 +24,8 @@ jQuery(document).ready(function() {
 	});
 });
 
+
+//Date and Day Type script
 var monthNames = [ "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December" ];
 var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
