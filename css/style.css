@@ -7,7 +7,7 @@ GENERAL
 /**********************************
 COLORS
 ***********************************/
-@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Questrial|Asap:400,700);
 /* font-family: 'Questrial', sans-serif; */
 html {
   width: 100%;
@@ -17,6 +17,9 @@ body {
   font-family: 'Questrial', sans-serif;
   width: 100%;
   height: 100%; }
+
+p {
+  font-family: 'Asap', sans-serif; }
 
 a {
   text-decoration: none; }
