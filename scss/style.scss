@@ -9,12 +9,12 @@ GENERAL
 COLORS
 ***********************************/
 //$off_accent: #BD6A4A;
-$off_accent:#EB884E;
+$off_accent:#EA942A;
 //$darkgrey: #443E3F;
 //$darkgrey: #443331;
 $darkgrey: #333;
 $accent: #EA942A;
-$lightgrey: #726C6A;
+$lightgrey: #666;
 $offwhite: #CCDADE;
 
 @import url(https://fonts.googleapis.com/css?family=Questrial|Asap:400,700);
@@ -82,6 +82,15 @@ MAIN CONTENT - All Regular Pages
 .section > a{
   margin-top:20px;
 }
+
+.accordion-section-content > p > a{
+  text-decoration:underline;
+}
+
+.accordion-section-content > p > a:hover{
+  color:$offwhite !important;
+}
+
 /*----- Accordion -----*/
 .accordion, .accordion * {
 	-webkit-box-sizing:border-box;
@@ -204,6 +213,8 @@ h6 {
   color:$off_accent;
 }
 
+
+
 .btn{
   color:$darkgrey !important;
   background:$accent;
@@ -216,33 +227,33 @@ body > section > .container{
 
 .landing_intro_section{
   background:#333;
-  //background: url('../img/pond.JPG') no-repeat center;
+  background: url('https://picjumbo.imgix.net/HNCK9012.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 
 .landing_section1{
   background:#eee;
-  //background: url('https://lh3.googleusercontent.com/rHL5yT2FxdZ1IsDStSxP4y8Sz8rhPwHhuY_u8AkI6JRtlHsMToZHSpVcsNV_9vQOFMF_a6QcyRQnzuqzc1xKxWh4G1SybxJmYLr1emu8Kiz0g9JdASY_kngT82brfP6k5mdiXtHEOt7ZoYUvDWjh_Evt63TwzJXmqP_k2Gnf9QzdAyJXShMmUmYCGPK7ulNeU8Ea-OZSV7strAhQJk-9CeP_hcqUNOq_yb3_vw6i8rtn7_2fK36_CghKvSfP1KsLBbS4Fr6ClfVe-ijlqmtpU1VDzx6TWqqC1sPRRVzvxF_9qpPREJzAgJBJB8bqSwqX8HlT7Yf0jEkX-8bnTLyMW1sh2TmJ0CF37VC7rLmoGnP2hV3BSmI7xTnIAE01CJMzZQK9or8OBkwdSDjJaNtwCrLz1e-ZCuQplqGrzi4-hm9RKUG4iT1q_6lrdCacrwYtmvWEkbreQ1em_oDGOI3AYjCUumjNMiQyr4ONXqKu699oo0Ksy0MTvoMtSJLHMdaXdZkiA4RD9c61mjKISsRYNOCjoxet_8iwnVjMZW2fNKE5TyM5kH7vZIjegdnNLKAeHIyj=w2036-h1356-no') no-repeat center;
+  background: url('https://picjumbo.imgix.net/HNCK1211.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section2{
   background:#333;
-  //background: url('https://lh3.googleusercontent.com/n6Y7x6DHZFVpVJDRxzpXeB4rKakmcULlsJTQBXoUktWilXjrjYig34EqQyReYbokcYUxc__8OMWL7Di4mYyUcpnq8RID0r9iFhqSwUXDxjOGB9_rBiuqIcmw0NPe92PeaRccI2rAPEZJTK5pzjKFXwWxmY28IjQ-75SoovTjXg-IJ1cAQSlPxAcHkxCGNWOBMWY8u0KJvD8LX5pQwOq3dw5bS_eNljv53caHh7U7Olp3Tg0pKy7I28ON9EibC2GoaGzxOBiKx7hIp6XNQGPYzRSuDNeI4C25dSkgWDmhFMMn27TOLxwN_d3NEjfnz36uO_p8GVk1KAX5DZu1F-4mg1D4Nj2VR4Nolakp1erjIms4BY5nYhCqTwNrWiSAmuOSMGj6UUGW1a_oJsgsHycX9PzjkozlLWz0kBwxmkEDd6Da1ZHUHsuesYFmG2Xez8GqodvaAXb-Ehqb_yTnJjLqs066RlYgtideeCrhiJEn7Zpf7D4RUdgmUfcp0d6wFxvclzCOeXXBLztJdf3JVSQomiz4fwj3cGUGSOjdH11GJXgMw3ECb3eZUWX6KJdvjMdgP3_l=w2036-h1356-no') no-repeat center;
+  background: url('https://picjumbo.imgix.net/P1000204.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section3{
   background:#eee;
- // background: url('https://lh3.googleusercontent.com/ySgOI_zKp1EXVFybjRViA6eA7ZaUXavpv6P44S_9BSENeMBVGK7xAh1xlUujFxZ7yqoRy5SxUFIiGCnWRbztMuieNvB4IBgEhiEFRl5te1aF2bTXo2wO0DzE-4kbvyYuMzFdLYV4RcnBv2YAouPal8Vq1l5v4Sq121DmJmZYCL7pmyd2hQruIB5FsBXOOS9kB01NTtNtV2oEOuMI6AOaWxz4h9TEqnR-5kPDDx5F9SdC94iEILb9Ix1xb0DvvDhLLx-7naXLDTw62p50F1gIOdDnMMsE3Vjyq0Rp_3GSnQ9BwSPoS7WIoPgRF3WhY5yqPmRow8s3U0ebinVzf9KP392oqlEcWy4GBU9hy0k2uFy6lJNvFvjkfZ08KVfuHBX5qqyVNYN--hxTT9UDB0hpAW_rB-aNKPeWeXYEwpsyaEDIN8ZQuRIVQOWx5VAkXMbfbl-Iybj0VW_ypKaA5kcqs9QB-upIgiOItSvyLadBOnL0irAI069HIIwxAlD8dCwakRK9hOUVe-wntCdCMeJkty-M_OoDHP5bhSncgqlCCgKmAA33lezZ_R_WQMoaCj6H2TlF=w2036-h1356-no') no-repeat center;
+  background: url('https://picjumbo.imgix.net/HNCK8461.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section4{
   background:#333;
-  //background: url('https://lh3.googleusercontent.com/4UvqaaKG8lqcJgZ-Sh0UtwSKEPY_LFN5S2tQSX2jbOnjCKE5zcpOeYcL-Cr58fBnQgbdpNH0PKFd0cVvv4w-PrIAmpd_N5sWI-1tHrSm_N21J7koXWxPxuJ-cHbDU9AYUzhLydt1524pv-lp4T0Ric3kINm9jgfvXV9bChN9Tz57ngg_tE5xYWu-Ey-bs33xsS2Z0yHJY6ycYydwpOzQ_UcP0X_b4zMBYyGF9LW1MaOuEMN-_45nHiGjvww7ISDGNnL4RNQjd4jKnULhSh4RekqFJuCDjESfzHS5C0YPAyFzl81q97Xwh4-wSISycf_a9IG54NsBBjEasfwzJkaNa2lUl_9VYSs8lCUhgFy7gMKO8vUQawi_DHmjPETLE710wzKQdMH5AYAYyGKbcDgKKqjyt2Mcg5V-xTlwTbHX1YnJ61hFgccMziQoZZRwqYwvxxYBQwk3MgtRmQM0ZQW6MmfxlsVGKFt7ARtuyUicWuoUe8VB_slW3SRzXRlBalTjDsdyGetctUVO_90QPAlq-e28_O8fStW0HvdJ8o5LVAKsDD5u9kWkMWuRCrgwBWYSDznv=w2036-h1356-no') no-repeat center;
+  background: url('https://picjumbo.imgix.net/HNCK7820.jpg?q=40&w=1650&sharp=30') no-repeat center;
 }
 
 .landing_section5{
-  background:#fff;
- // background: url('https://lh3.googleusercontent.com/dOOgHGRa2UAJ-HAFQNxl4bEAFkC8mtbq4MTC-s_Ej-85jf0tlh4mnct0ubjbtj-HSDR2_miPc0VRpcBxIhEC_unXZdUWW_8My1M0Mdw4mO8Jg8M1glpdaQy2rArDuRSHwv_ZUY_Y5G7oBQRX5hvh6IN62Ot629ljmKhLhLJU3yNgd9ZEfK2r28MRQwi9drQPp49v4389exoAGn-ighc0ObvmdcFw5tHWjqYGMCKfDPilINaYGWOVcjxrtAMUCTeXDC1jaCd4JD8pMhDbnO7D5emqJYERHqWLth9U_5dGpcpWGpnQuw3YMdwAnmZdcr7x_bKP6sQ3YYwGA27ODf9ZwE-sYFzyVTV7c0xKFB_ztD43XmWpm2GCq0bTmzyPTTM6ZLH7Y-hK7cAIWHLOw-KbO_9WSnpbxoM28XVMXRg2f6n0ESlQyIQ7VQEMhqYZPmeCWtmF7g7TqAEXP20OyLTzWQ4tnus0Az8wT3C5YVQb-U7VI6p34LTYhhDj0nFY3bUCIM0oYI9-x99XfsY8ZZUsZVKp7HRM8BI0tpFkOfcKjT0fsSWgScdiPvHfMNbmbTN0-QR9=w2036-h1356-no') no-repeat center;
+  background:#333;
+  //background: url('https://lh3.googleusercontent.com/dOOgHGRa2UAJ-HAFQNxl4bEAFkC8mtbq4MTC-s_Ej-85jf0tlh4mnct0ubjbtj-HSDR2_miPc0VRpcBxIhEC_unXZdUWW_8My1M0Mdw4mO8Jg8M1glpdaQy2rArDuRSHwv_ZUY_Y5G7oBQRX5hvh6IN62Ot629ljmKhLhLJU3yNgd9ZEfK2r28MRQwi9drQPp49v4389exoAGn-ighc0ObvmdcFw5tHWjqYGMCKfDPilINaYGWOVcjxrtAMUCTeXDC1jaCd4JD8pMhDbnO7D5emqJYERHqWLth9U_5dGpcpWGpnQuw3YMdwAnmZdcr7x_bKP6sQ3YYwGA27ODf9ZwE-sYFzyVTV7c0xKFB_ztD43XmWpm2GCq0bTmzyPTTM6ZLH7Y-hK7cAIWHLOw-KbO_9WSnpbxoM28XVMXRg2f6n0ESlQyIQ7VQEMhqYZPmeCWtmF7g7TqAEXP20OyLTzWQ4tnus0Az8wT3C5YVQb-U7VI6p34LTYhhDj0nFY3bUCIM0oYI9-x99XfsY8ZZUsZVKp7HRM8BI0tpFkOfcKjT0fsSWgScdiPvHfMNbmbTN0-QR9=w2036-h1356-no') no-repeat center;
 }
 
 /*modifying bootstrap's css*/
