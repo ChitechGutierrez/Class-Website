@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
 .hidden{
     display: none;
 }
@@ -13,6 +15,7 @@
     margin: 0 auto;
     padding-top:5px;
     padding-bottom: 5px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body{
@@ -27,6 +30,11 @@ body{
 .option{
     background-color: #29B4F8;
     padding: 10px;
+}
+
+.gameOver{
+    color:red;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #controls{
