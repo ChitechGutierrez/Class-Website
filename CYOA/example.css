@@ -42,5 +42,6 @@ button{
     background-color: #eee;
     border-radius: 1px;
     border:none;
-    margin:5px;
+    margin:2px;
+    height:40px;
 }
