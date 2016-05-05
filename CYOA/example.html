@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="templateCYOAGame">
+    <meta name="author" content="nickgutierrez">
+
+    <title>CYOA - Template</title>
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="normalize.css">
+    <link type="text/css" rel="stylesheet" href="example.css">
+
+
+
+</head>
+<body>
+    <div id="header">
+        <h1>Aaron Swartz</h1>
+        <h3>A Choose Your Own Adventure Story Game.</h3>
+        <h5>By Nick Gutierrez</h5>
+    </div>
+    
+    <div id="mainContent">
+        <div class="option current" id="start">
+            <h3>Introduction...</h3>
+            <p>Aaron Swartz was a prodigy. A young computer genius. "A mind in a million", or so said one of mentors. Aaron's goal for most of his life was to save the world.  He felt the way to do this was to make sure people were informed and educated. He didn't believe that there should be any gates or barriers to learning. You shouldn't have to pay to get an education, and you shouldn't have to pay to learning something new online. This belief eventually got him into trouble. Which path actually happened is up to you to figure out.</p> 
+            <p>You will journey through this young man's life, taking on the role of seperate important people in Aaron's life.</p>
+            <p>Are you ready to play?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('start', 'opt00')" id="startGame" type="button">Start Game</button>
+            </div>
+        </div>
+        
+        <div class="option hidden" id="opt00">
+
+                        
+            <h3>Our story begins...</h3>
+            
+            <p><strong>2002, in Highland Park Illinois.</strong></p>
+
+            <p>You take the role of Aaron Swartz's parents, Robert and Susan. You are raising 3 boys: Noah, Ben and Aaron. All three kids are bright, but Aaron seemed to develop faster then his brothers did. Mentally, that is. Aaron was small for his age, but had begun to walk and talk much earlier then most children. At the age of 3, Aaron started to read complete sentences. At age 4, Aaron, a precocious child, stumbled upon some programs on the family computer. Aaron figured out how to work the programs, like Microsoft Paint and even more complicated programs without any help. Before turning 10, Aaron had learned several programming languages and had worked hours on end creating Star Wars trivia games with his brothers.</p>
+            
+            <p>Aaron started struggling in school in junior high. He was a little chubby, but you knew he would grow out of it. He had trouble making friends, and got into arguments with his teachers. He started to get quiet and withdrawn. You later discover it's because he has been working on a project creating something called "RSS".  He says it lets you take updates from any website you want and creates a "feed" with a digest of the information. You don't really know what that means, but he seems really excited about it, and thinks it could help a lot of people. The thing that worries you is that he is only 13, and is working with adults on this technology. You monitor his posts, just to make sure everything is ok, but the stuff Aaron is working on is beyond you. </p>
+            
+            <p>Because of his work on RSS, he is asked to join W3C, the  World Wide Web Consortium. He is asked to fly out to a conference, and you take him. Everyone was surprised to learn how young Aaron was, and you can tell that this both pleased him and annoyed him. He liked to surprise people, as it means he got to show off. But he also hated not being taken seriously. He began to work with the very people who created and maintain the internet. He kept talking about "Web 2.0", which he says he is working on. He claims it will change the world. You think that maybe he is just being overly enthusiastic, as kids tend to do. At a conference, one of your 14 year old's adult collegue tells you that, in fact, the work Aaron was doing would have a tremendous impact on the way people use the interent.</p>
+            
+           <p> A little over a year has gone by, and now, as Aaron is finishing his freshman year in high school, he gets an invite to take college classes, but it would mean he would have to drop out of high school. He could handle the work, without a doubt. But he wouldn't learn to socialize with people his own age. Other than his brothers, Aaron rarely had positive interactions with other teenagers. You worry that taking him out of high school would stunt his social/emotional development.</p>
+            
+           <p> You now have to decide. Do keep Aaron in high school in order to make sure he keeps growing socially, and have him pursue his interests outside of school, or do you let Aaron drop out and start going to college at the age of 15?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt00', 'opt1A')" id="button1A" type="button">You keep Aaron in high school to socialize.</button>
+                <button onclick="optionSelect('opt00', 'opt1B')" id="button1B" type="button">You let him drop out of high school.</button>
+            </div>
+        </div>
+        
+        <div class="option hidden" id="opt1A">
+            <p>You now take on the role of Aaron Swartz himself. Your parents make you stay in high school. They tell you it will be good for you, and help you to learn how to socialize. It doesn’t go well. You still maintain your connections with WC3 and RSS, but you can’t get much work done. You find that you are kept busy by meaningless work about things you don’t care about. Eventually you get sick of it, and midway through your senior year, you stop attending school. You don’t drop out, but you have been failing classes for a while, and you don’t graduate. Even after scoring a near perfect ACT score, you can’t get into any colleges because of your grades and GPA.</p>
+
+            <p>You know you will be ok though. You have been doing work outside of academia. You continue with your projects for a while. RSS comes out and is a success, and you have done some work on reworking United States Copyright law. But you have grown bitter and angry at being locked out of higher education. You start lashing out, and eventually your peers see you as the teenage you are, and decide you are too immature to continue working with them. They freeze you out of the projects, and while they give you credit, they don’t let take the credit you felt you deserved.</p>
+            
+            <p>You realize that you need to use your skills for yourself, and by yourself.</p>
+            
+            <p>You have a choice to make. Do you become a White Hat Hacker (the Good ones) or a Black Hat Hacker (the Bad guys)?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1A', 'opt2AA')" id="button2AA" type="button">White Hat</button>
+                <button onclick="optionSelect('opt1A', 'opt2AB')" id="button2AB" type="button">Black Hat</button>
+            </div>
+        </div>
+                <div class="option hidden" id="opt2AA">
+                    <p>You can’t get a good job, because you gained a reputation of being a mean spirited person. You don’t have a high school diploma either. Your family offers to help, but you never liked needing anyone for anything, so you start turning to your knowledge and skills to earn you money directly. </p>
+
+                    <p>But you still believe in your mission to save the world.</p>
+                    
+                    <p>You spend months researching different things you can do to try and help the world. You learn of a weakness in FedLoan’s security. FedLoan is one of the world's largest lenders for Student Loans in America. You think you can get in and delete all of the data on student loans in America. It’s risky, but you think you can do it.</p>
+                    
+                    <p>You also learn about a United States Senator that has been trading illegal child pornography. He knows the identity of several predators that have been preying on children around the world. You know that you can expose him, and help a lot of children.</p>
+                    
+                    <p>You have to make a decision. Do you hack FedLoan, or do you hack the pedophile Senator?</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2AA', 'opt3AAA')" type="button">Hack Fedloan</button>
+                        <button onclick="optionSelect('opt2AA', 'opt3AAB')" type="button">Hack the Senator</button>
+                    </div>
+                </div>
+                
+                         <div class="option hidden" id="opt3AAA">
+                            <p>You decide to hack FedLoan. You delete all of the records and you help millions of people struggling to pay for their education. Except a lot of very rich people lost a lot of money. So they hire hackers to find you. And they do. You get caught a few days later.</p>
+                            
+                            <p>The lender's claim you stole money from them, despite not taking a single dime for yourself. The lender’s push for a harsh sentence, and donate money to the right people to make sure you get life in prison. They also sue you and your family, bankrupting them.</p> 
+                            
+                            <p>But the world backs you up. They donate money to you and your family, and you are able to hire a good lawyer. After years of legal battles, you eventually get off with a slap on the wrist due to a technicality. You found records that you were hacked in order to find who you were, which was made illegal by the very people who are prosecuting you.</p>
+                            
+                            <p>The years of legal battles took their toll however. You have always had anxiety issues, and you had to “dull the edge” with painkillers. You become addicted, and on the very morning you were to be found not guilty, you were found dead in your apartment, having overdosed on Vicodin.</p>
+                            
+                            <p>GAME OVER</p>
+                        </div>
+                
+                         <div class="option hidden" id="opt3AAB">
+                            <p>You decide to hack the Senator. You start by blackmailing him to give up the names of other pedophiles, which he does. You turn over all of your information to the authorities. But you know that they wouldn’t take it seriously unless they knew where the information came from. So you step forward after a few days after the leak is reported on in the news. You expect to be received as a hero. The public does, but the government takes it seriously, and arrest you for illegal hacking. Regardless of the good that came out of it, you still broke the law.</p>
+
+                            <p>The senator and everyone that you outed were arrested. Each of them gives up more names, and one of the largest child porn rings in America is decimated. Everyone sees the good in what you did, but ultimately, you broke the law. The courts take it easy on you. You get 6 months house arrest, but you retain access to your computer. You become known as a social justice warrior, and use to help more people. You join Hactivist groups, always insulating yourself from anything illegal, but become a public voice for cyber vigilantes, people who use their knowledge to help people. </p>
+                            <p>GAME OVER</p>
+                        </div>
+                        
+                <div class="option hidden" id="opt2AB">
+                    <p>You can’t get a good job, because you gained a reputation of being a mean spirited person. You don’t have a high school diploma either. Your family offers to help, but you never liked needing anyone for anything, so you start turning to your knowledge and skills to earn you money directly. </p>
+
+                    <p>You start hacking people. </p>
+                    
+                    <p>You target bad people, those that hurt others. You don’t like to hurt people, but you believe in punishment. So you go after criminals, and you steal credit card numbers and money. You stay small scale to avoid attention, but you are good at it. Very good. You gain a reputation online as being uncatchable. A Ghost.</p>
+                    
+                    <p>You turn into a hacker for hire. People hire you to hack people for them, and make decent money with it. You get contacted by a United State Senator’s aide. You are asked to remove any association or mention of the Senators from his mistress’ phones and computers. You are asked to delete evidence that would put a corrupt Senator in jail. You do it, because you see it as a way in. If you do this for the Senator, you then have something to hold over the Senator and can control him.</p>
+                    
+                    <p>After you do the job, you get paid. A few days later, you hear a knock on the door. You know your parents aren’t home so you go and answer it.</p>
+                    
+                    <p>2 hours later, your mother comes home with dinner. She knew that you were supposed to be home, waiting for the fridge repair man. But she can’t find you anywhere. She checks your room, and that the computers are gone. She finds a printed note, unsigned on the bed. Nothing else is gone, not even your clothes or money. It says:
+                    
+                           <p> “I have left the country. Don’t come looking for me. You will not find me.”
+                    
+                    <p>Except you don’t have a passport. </p>
+                    
+                    
+                    <p>GAME OVER</p>
+                </div>
+
+                        
+        <div class="option hidden" id="opt1B">
+            <p>You now take on the role of Aaron Swartz himself. Your parents let you drop out of high school and attend college at 15. You know it's going to be a challenge, but you are okay with that. You know that you would never be able to get along with the other kids at school. But you also hate being looked down on for being so young. That's why you like the internet so much. You can be anyone. No one has to know that you are only 15.</p>
+
+            <p>Until they ask to meet you. You were working on RSS for a few months, and you never actually lied about not being an adult, you didn't tell them. They eventually asked to meet you at a conference, so they could unveil your hard work. Ultimately, you were central to finishing it, so they felt that you should get credit for it. You debated lying about how you were sickly and couldn't travel, but you realize that would ultimately work against you.  What would happen when you got older? </p>
+            
+            <p>You decide to tell them "I don't think my mom would like that... but I can go ask." </p>
+            
+            <p>The entire RSS team was surprised, but luckily, most of them were fine with it. A few thought it was weird, but eventually came around.</p>
+            
+            <p>You continue your work with RSS and W3C, and you start getting fairly well known. This was both awesome and annoying. It's great that people were paying attention to you, and they were respecting the work you did. But you also had to deal with people looking down on you, literally and figuratively. Just before your 16th birthday, you get in a conversation with people who worried about the future of the internet. Copyright law has been halting progress for years, but it was becoming untenable. That is when you switch gears to studying law.</p>
+            
+            <p>You help to develop the Creative Commons License, which lets people copyright their materials with a few different options and protections. You can make your work public for anyone to use under certain conditions, such as for non-commercial use. This made it so pictures, movies, code and ideas could be shared without having to worry about who owns it. This revolutionizes the internet, and makes it so people can collaborate. It gets picked up by artists all over the world and used. Eventually, even big tech companies like Google would start using it. The Android phone platform takes off because the Android Operating system was released to the world under the Creative Commons License.</p>
+            
+            <p>After a few years, RSS is released to the world. It lets bloggers make their work known, and changes how podcasts, videos and news are shared to the world, and how people access this content. It does exactly what you and your team thought it would do. </p>
+            
+            <p>You decide to take the RSS technology, which was released under Creative Commons, and try to launch a new website which was a website content manager, called Infogami.</p>
+            
+            
+            <p>It tanks. Hard. It doesn’t take off, despite the following you had earned. You can’t seem to figure out what was missing from it. A friend eventually points you to a group of people trying to develop Reddit as a social network.</p>
+            
+            <p>You have to make a decision. Do you continue to try and figure out Infogami by yourself, or do you merge your project with Reddit to try and create something new.</p>
+                
+            <div id="controls">
+                <button onclick="optionSelect('opt1B', 'opt2BA')" id="button2BA" type="button">Continue to work on Infogami by yourself.</button>
+                <button onclick="optionSelect('opt1B', 'opt2BB')" id="button2BB" type="button">Join the Reddit team.</button>
+            </div>
+        </div>
+                <div class="option hidden" id="opt2BA">
+                    <p>You decide to work on Infogami alone. You work hard to try and make it work. You put all of your time and money into it, knowing that it would eventually take off. Everything you had worked on in the past had worked out. </p>
+
+                    <p>Eventually, you are offered a buyout for the company. Myspace wants your algorithm, but the actual product itself. They would abandon the idea behind Infogami.</p>
+                    
+                    <p>You decide to not take the buyout, turning away several million dollars in the process. You redouble your efforts, and drop out of college to pursue it. You use the fame you gained from being a prodigy to push people to use it, but ultimately it fails. </p>
+                    
+                    <p>You go bankrupt in the process. Your reputation is ruined. You have to work part time at a Best Buy to pay the bills. You develop a drinking problem, and while you reminisce about the good days, when your life help the promise of greatness, you commit suicide at the age of 32.</p>
+                    
+                    <p>GAME OVER</p>
+                        
+                <div class="option hidden" id="opt2BB">
+                    <p>INCOMPLETE - Join Reddit. Make millions. Quit job after 1 day. Launch career as social activist. Open Library and PACER stuff happens. Set sights on JSTOR. CHOICE: Try the PACER thing with JSTOR, or launch competitor with fair payment as a focus.</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2BB', 'opt3BBA')" type="button">JSTOR</button></button>
+                        <button onclick="optionSelect('opt2BB', 'opt3BBB')" type="button">Competitor</button>
+                    </div>
+                </div>
+                        
+                        <div class="option hidden" id="opt3BBA">
+                            <p>INCOMPLETE - JSTOR goes bad, get caught. Prosecution makes an example of you. Still helps with SOPA. get depressed. commit suicide, become martyr.</p>
+                        </div>
+                
+                         <div class="option hidden" id="opt3BBB">
+                            <p>INCOMPLETE - The competitor works, but poorly. Doesn't get the respect it needs in order to succeed. Middling success, eventually sells it off. Studies law, becomes Tech Lawyer specialist, runs for senator, reforms tech laws.</p>
+                        </div> 
+ 
+        
+    </div>
+    
+    
+        <script> 
+        
+        function optionSelect(cur, sel){
+            document.getElementById(cur).className= 'option hidden';
+            document.getElementById(sel).className = 'option current';
+        
+        }
+</script>
+</body>

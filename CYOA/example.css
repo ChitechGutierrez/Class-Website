@@ -1,0 +1,46 @@
+.hidden{
+    display: none;
+}
+
+#current{
+    display: initial;
+}
+
+#header{
+    background-color: #333;
+    color: #eee;
+    width:100%;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+body{
+    background-color: #22A7F0;
+    text-align: center;
+}
+
+#mainContent{
+    padding:5px;
+}
+
+.option{
+    background-color: #29B4F8;
+    padding-top: 10px;
+}
+
+#controls{
+    background-color: #333;
+    color: #eee;
+    width:100%;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+button{
+    background-color: #eee;
+    border-radius: 1px;
+    border:none;
+    margin:5px;
+}
