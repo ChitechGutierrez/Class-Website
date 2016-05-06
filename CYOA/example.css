@@ -27,6 +27,16 @@ body{
     padding:10px;
 }
 
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.smaller{
+    max-width: 200px;
+}
+
 .option{
     background-color: #8CA0A7;
     padding: 10px;
