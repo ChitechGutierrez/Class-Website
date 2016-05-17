@@ -204,6 +204,6 @@ function updatePeriod ( date, daytype, time ) {
 		
 	}
 	
-	return "School's Out";
+	return "Passing Period";
 }
 
