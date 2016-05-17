@@ -115,7 +115,7 @@ function updateClock ( )
  	{
  	var currentTime = new Date ( );
   	var currentHours = currentTime.getHours ( );
-  	var currentMinutes = currentTime.getMinutes ( );
+  	var currentMinutes = (currentTime.getMinutes ( )+4);
   	var currentSeconds = currentTime.getSeconds ( );
 
   	// Pad the minutes and seconds with leading zeros, if required
