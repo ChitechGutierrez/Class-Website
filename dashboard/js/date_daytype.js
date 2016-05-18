@@ -1,3 +1,8 @@
+//Set to wait until entire page is loaded before starting, to ensure eveyrthing syncs up. 
+//Refreshes every 1000ms AKA every second.
+
+//Should be able to make this more efficient by having it refresh DayType and Date only after midnight
+
 $(document).ready(function()
 {
 	window.setInterval(function(){
@@ -35,7 +40,7 @@ function updateDate () {
 	var todayYear = newDate.getFullYear();
 	
 	
-	var currentDateString = todayDay + ", " + todayDate + ' ' + todayMonth + ' ' + todayYear;
+	var currentDateString = todayDay + ", " + todayMonth + ' ' + todayDate + ' ' + todayYear;
 	
 	return currentDateString;
 	
