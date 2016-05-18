@@ -204,7 +204,7 @@ function updatePeriod ( date, daytype, time ) {
 		
 	}
 	
-	if (daytype == "Today is a <span class='dayTypeLetter'>X</span> day.") {
+	if (daytype == "Today is an <span class='dayTypeLetter'>X</span> day.") {
 		if ((time[0] == 9) && (time[1] <= 40)){
 			return "1st Period";
 		}
@@ -243,12 +243,17 @@ function updatePeriod ( date, daytype, time ) {
 		
 	}
 	
-	if (daytype == "Today is a <span class='dayTypeLetter'>B</span> day." || daytype == "Today is an <span class='dayTypeLetter'>A</span> day." ) {
-		if ((time[0] <= 9) || ((time[0] == 03) && (time[1] <= 35))){
+	if (daytype == "Today is a <span class='dayTypeLetter'>B</span> day." 
+		|| daytype == "Today is an <span class='dayTypeLetter'>A</span> day.") {
+		if ((time[0] <= 9) || ((time[0] == 03) && (time[1] >= 35))){
 			return "School's Out";
 		}
-		
-		
+	}
+	
+	if (daytype == "Today is an <span class='dayTypeLetter'>X</span> day."){
+		if ((time[0] <= 9) || ((time[0] == 03) && (time[1] >= 12))){
+			return "School's Out";
+		}
 	}
 	
 	return "Passing Period";
