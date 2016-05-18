@@ -204,6 +204,45 @@ function updatePeriod ( date, daytype, time ) {
 		
 	}
 	
+	if (daytype == "Today is a <span class='dayTypeLetter'>X</span> day.") {
+		if ((time[0] == 9) && (time[1] <= 40)){
+			return "1st Period";
+		}
+		
+		if (((time[0] == 9) && (time[1] >= 44)) || ((time[0] == 1) && (time[1] <= 24))){
+			return "2nd Period";
+		}
+		
+		if (((time[0] == 10) && (time[1] >= 28)) || ((time[0] == 11) && (time[1] <= 07))){
+			return "6th Period";
+		}
+		
+		if (((time[0] == 11) && (time[1] >= 12)) || ((time[0] == 11) && (time[1] <= 52))){
+			return "7th Period";
+		}
+		
+		if (((time[0] == 11) && (time[1] >= 56)) || ((time[0] == 12) && (time[1] <= 26))){
+			return "Period 3A";
+		}
+		
+		if (((time[0] == 12) && (time[1] >= 30)) || ((time[0] == 01))){
+			return "Period 3B";
+		}
+		
+		if (((time[0] == 01) && (time[1] >= 04)) || ((time[0] == 01) && (time[1] <= 44))){
+			return "4th Period";
+		}
+		
+		if (((time[0] == 01) && (time[1] >= 48)) || ((time[0] == 02) && (time[1] <= 28))){
+			return "4th Period";
+		}
+		
+		if (((time[0] == 02) && (time[1] >= 32)) || ((time[0] == 03) && (time[1] <= 12))){
+			return "5th Period";
+		}
+		
+	}
+	
 	if (daytype == "Today is a <span class='dayTypeLetter'>B</span> day." || daytype == "Today is an <span class='dayTypeLetter'>A</span> day." ) {
 		if ((time[0] <= 9) || ((time[0] == 03) && (time[1] <= 35))){
 			return "School's Out";
