@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Iceland);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body{
     padding: 0;
@@ -6,18 +6,21 @@ body{
     background-color: #674172;
 }
 
-.dateAndTime {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-    width:95%;
-    margin: 0 auto;
+.col-xs-3{
+    padding: 0;
+}
+.col-xs-9{
+    padding: 0;
+}
+
+.dashboard {
+    background-color: #eee;
     text-align: center;
-    font-size: 10vw;
-    color:#eee;
-    font-family: 'Iceland', cursive;
+    font-size: 8vw;
+    color:#674172;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
 }
 
 .date{
@@ -25,13 +28,27 @@ body{
 }
 
 .dayType{
-    font-size: 10vw;
+    font-size: 6vw;
 }
 
 .dayTypeLetter{
-    font-size:16vw;
+    font-size:10vw;
 }
 
 #period{
-    font-size: 16vw;
+    font-size: 9vw;
+}
+
+.daysOfPeace{
+    font-size: 6vw;
+    text-align: center;
+    margin:0 auto;
+    width:100%;
+    margin-top: 3vw;
+    border-left: 3px solid #674172;
+}
+
+.tableHeader{
+    font-size: 3vw;
+    text-align: center;
 }

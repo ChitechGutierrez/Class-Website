@@ -10,24 +10,58 @@
     <meta name="author" content="">
 
     <title>TV Dashboard</title>
+    
         <link type="text/css" rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="dateAndTime">
-    <div class="date">Date</div>
-    <div class="dayType">Day Type</div>
-    
-    <div id="clock">Time</div>
-    <div id="period">Period</div>
-    
+<div class="dashboard">
+<div class="container">
+    <div class="row">
+    <div class="col-xs-9">
+        <div class="dateAndTime">
+            
+            <div class="date">Date</div>
+            <div class="dayType">Day Type</div>
+            
+            <div id="clock">Time</div>
+            <div id="period">Period</div>
+    </div>
+    </div>
+    <div class="col-xs-3">
+        <table class="daysOfPeace">
+            <TR class="tableHeader"> 
+                <TD>Days of </TD>
+                <TD>Peace</TD>
+           </TR>
+            <TR> 
+                <TD>9<sup>th</sup>-</TD>
+                <TD>0</TD>
+           </TR>
+           <TR> 
+                <TD>10<sup>th</sup>-</TD>
+                <TD>0</TD>
+           </TR>
+           <TR> 
+                <TD>11<sup>th</sup>-</TD>
+                <TD>39</TD>
+           </TR>
+           <TR> 
+                <TD>12<sup>th</sup>-</TD>
+                <TD>59</TD>
+           </TR>
+        </table>
+            </div>
 </div>
-
+    </div>
+</div>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
     
     <!-- Date, Daytype and Time -->
     <script src="js/date_daytype.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
 </body>
