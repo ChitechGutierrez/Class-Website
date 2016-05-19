@@ -40,7 +40,7 @@ function updateDate () {
 	var todayYear = newDate.getFullYear();
 	
 	
-	var currentDateString = todayDay + ", " + todayMonth + ' ' + todayDate + ' ' + todayYear;
+	var currentDateString = todayDay + ", " + todayMonth + ' ' + todayDate + ' ';
 	
 	return currentDateString;
 	
