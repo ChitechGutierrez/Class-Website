@@ -261,6 +261,10 @@ function updatePeriod ( date, daytype, time ) {
 		}
 	}
 	
+	if (daytype == "No School"){
+		return "No School"
+	}
+	
 	return "Passing Period";
 }
 
