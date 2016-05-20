@@ -92,7 +92,7 @@ function updateDayType (ScheduleCheck){
 	else if ( ScheduleCheck[0] == '7' 
 	    || ScheduleCheck[0] == '8'
 	    ){
-	  message = "No School: Summer Vacation";
+	  message = "No School";
 	}
 	
 	// Modified Schedule
@@ -108,7 +108,7 @@ function updateDayType (ScheduleCheck){
 	} else if(newDate.getDay() == 5){
 	  message = "Today is an <span class='dayTypeLetter'>X</span> day.";
 	} else if(newDate.getDay() == 0 || newDate.getDay() == 6){
-	  message = "No School: Today is the Weekend";
+	  message = "No School";
 	} 
 	
 	return message;
