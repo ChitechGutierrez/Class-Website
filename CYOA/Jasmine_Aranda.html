@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="templateCYOAGame">
+    <meta name="author" content="nickgutierrez">
+
+    <title>CYOA - Template</title>
+
+</head>
+<body>
+    <div id="header">
+        <h1>JFK</h1>
+        <h3>A Choose Your Own Adventure Story Game.</h3>
+        <h5>By Jasmine Aranda</h5>
+    </div>
+    
+    <div id="mainContent">
+        <div class="option current" id="start">
+            <p>John F. Kennedy was the 35th President of the United States, but his journey ended early due to his assassination that occurred on November 22,1936. He accomplished many things and if he weren't assassinated, he could have accomplished more, including the things he didn't get to finish.
+</p>
+            <p>Are you ready to play?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('start', 'opt00')" id="startGame" type="button">Start Game</button>
+            </div>
+        </div>
+
+<!-- Option 0 -->
+
+        <div class="option hidden" id="opt00">
+            
+            <p>It’s November 22, 1963. You’re in Dallas, Texas guarding the motorcade that John F. Kennedy  is attending. You’re standing nearby with the other guards, your job is to keep watch of everything, make sure there is no conflict and that everyone is safe. As you’re standing around, one of the guards tell you that they have a feeling that something is going to go wrong. He tells you about how me noticed something suspicious coming from the sixth floor of a nearby building. You think that it might be nothing, but there’s still a chance that something could go wrong. Do you go and check out the building?
+</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt00', 'opt1A')" id="button1A" type="button">Ignore the guard next to you</button>
+                <button onclick="optionSelect('opt00', 'opt1B')" id="button1B" type="button">Listen to the guard next to you and check out the building</button>
+            </div>
+        </div>
+
+<!-- Option 1A -->
+
+        <div class="option hidden" id="opt1A">
+            <p>You brush off what your friend told you and decide to continue to guard the motorcade. As you’re watching the motorcade, you hear a gunshot followed by the sound of everyone screaming. There’s people running, screaming and pushing. There’s people getting shoved to the ground being continuously stepped on. You notice that the sound of the gunshot came from the building your friend was suspicious about.  What do you do next?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1A', 'opt2AA')" id="button2AA" type="button">Run towards the crowd to find whoever was shot</button>
+                <button onclick="optionSelect('opt1A', 'opt2AB')" id="button2AB" type="button">Run into the building and find the room the gunshot came from</button>
+            </div>
+        </div>
+        
+<!-- Option 2AA -->
+
+                <div class="option hidden" id="opt2AA">
+                    <p> As you continue to guard the motorcade you hear a gunshot. Everyone is running around screaming, there are people getting pushed and stepped on. You push through the crowd trying to get to who ever was shot. Once you get there, you see John F. Kennedy in the car bleeding. He gets rushed to the hospital and you later on find out that he died due to his injury. The next day after John F. Kennedy’s death, Lyndon Baines Johnson takes over as president. During his presidency he tried to do his best to lead in the way that John F. Kennedy would have done.
+</p>
+                </div>
+            
+
+<!-- Option 2AB -->
+
+                <div class="option hidden" id="opt2AB">
+                    <p>After hearing the loud gun shot, you run into the building that you believe it came from. You get into the building and see everyone inside of it running outside of the building. You stop a few people and ask them where they believe it came from. Every person you ask tells you that they believe it came from the sixth floor. Once you get to the sixth floor they point towards the room. You see a man running out of the room and you jump on him. One of the other guards followed you and helped you out. You arrest the shooter, Lee Harvey Oswald, and put him into a cop car where he is arrested. Once you're back outside you find out that the president was the one who was shot. He’s rushed to the hospital and dies a couple hours later due to his serious injury. The next day after John F. Kennedy’s death, Lyndon Baines Johnson takes over as president. During his presidency he tried to do his best to lead in the way that John F. Kennedy would have done.</p>
+                </div>
+
+<!-- Option 1B -->
+  
+                        
+        <div class="option hidden" id="opt1B">
+            <p> You decide to listen to what your friend said. He shows you the building and you walk towards it. You have a hard time trying to figure out what floor the room is on. What do you do next?
+</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1B', 'opt2BA')" id="button2BA" type="button">Check the 6th floor for a few minutes</button>
+                <button onclick="optionSelect('opt1B', 'opt2BB')" id="button2BB" type="button">Ask your friend for help, so you can find the room</button>
+            </div>
+        </div>
+        
+<!-- Option 2BA -->
+
+                <div class="option hidden" id="opt2BA">
+                    <p>Your friend tells you what floor the room is on,  you walk around the building keeping an eye out for anything you believe would be considered suspicious. After walking around for a few minutes you decide that it was nothing and head back to the motorcade. You walk back to the area your friends are. As you’re walking back you hear a loud sound. It’s a gunshot. Everything went silent for a second until the sound of screams and loud footsteps filled the air. What do you do? 
+</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2BA', 'opt3BAA')" type="button">Run to the crowd</button>
+                        <button onclick="optionSelect('opt2BA', 'opt3BAB')" type="button">Run into the building</button>
+                    </div>
+                </div>
+                
+<!-- Option 3BAA -->
+
+                         <div class="option hidden" id="opt3BAA">
+                            <p>You run towards the crowd. Everyone is screaming and freaking out. You push your way through the crowd trying to find out who was injured. As you get to the front, you see John F. Kennedy sitting in the car bleeding. Everyone is trying to make sure he is okay. He's rushed to the hospital where he later on dies due to his wound. The next day after John F. Kennedy’s death, Lyndon Baines Johnson takes over as president. During his presidency he tried to do his best to lead in the way that John F. Kennedy would have done.</p>
+                        </div>
+
+<!-- Option 3BAB -->
+
+                         <div class="option hidden" id="opt3BAB">
+                            <p> You run into the building and ask people where they believe the gunshot came from. As you're running towards the room you see and man running out. You jump on him and ask for backup. They check the room and find a gun by the window. You take him into custody and he is arrested for the killing of John F. Kennedy. Kennedy is rushed to the hospital and dies a couple hours later due to his serious injury. The next day, Lyndon Baines Johnson takes over as president. During his presidency he tried to do his best to lead in the way that John F. Kennedy would have done.</p>
+                        </div>
+            
+<!-- Option 2BB -->
+
+                <div class="option hidden" id="opt2BB">
+                    <p>You walk into the building and begin to search around. You call one of the guards and ask them what floor they believe was suspicious. They then ask the owner of the building to tell them what floor and room they believe it was. After getting that information you go to the sixth floor and begin to look around. You find the room and barge into it, finding Lee Harvey Oswald positioned towards the window. You run towards him trying to stop him from pulling the trigger. As you push him away he pulls the trigger. It hits a person nearby, as you look out the window you notice that his target was the president. You put Lee Harvey Oswald into handcuffs and take him into custody. You contact the others and tell them what's going on and they contact the president's security. The motorcade is cut short and the president is boarded onto his plane early for his safety.  A year after the motorcade, John F. Kennedy decides to run for a second term in the 1964 election. Due to Popular votes he wins</p>
+                </div>
+ 
+        
+    </div>
+    
+<style>
+    
+#header{
+    background-color: black;
+    color: #eee;
+    width:100%;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+body{
+    background-color: white;
+    text-align: center;
+}
+#mainContent{
+    padding:10px;
+}
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+.smaller{
+    max-width: 200px;
+}
+.option{
+    background-color: grey;
+    padding: 25px;
+    border-radius:1px;
+    text-align: left;
+    
+}
+#controls{
+    background-color: #333;
+    color: #eee;
+    width: 100%;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius:1px;
+    text-align: center;
+}
+button{
+    background-color: #eee;
+    border-radius: 1px;
+    border:none;
+    margin:2px;
+    height:40px;
+}
+/********************************************************************************************
+          .                                                      .
+        .n                   .                 .                  n.
+  .   .dP                  dP                   9b                 9b.    .
+ 4    qXb         .       dX                     Xb       .        dXp     t
+dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
+9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
+ 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
+  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
+    `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'
+        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
+                        )b.  .dbo.dP'`v'`9b.odb.  .dX(
+                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
+                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
+                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
+                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
+                     `'      9XXXXXX(   )XXXXXXP      `'
+                              XXXX X.`v'.X XXXX
+                              XP^X'`b   d'`X^XX
+                              X. 9  `   '  P )X
+                              `b  `       '  d'
+                               `             '
+                    DO NOT TOUCH ANYTHING BELOW THIS LINE
+********************************************************************************************/
+.hidden{
+    display: none;
+}
+#current{
+    display: initial;
+}
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+} 
+    
+</style>    
+
+<script> 
+        
+        function optionSelect(cur, sel){
+            document.getElementById(cur).className= 'option hidden';
+            document.getElementById(sel).className = 'option current';
+        
+        }
+</script>
+</body>
