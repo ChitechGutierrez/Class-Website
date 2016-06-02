@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="templateCYOAGame">
+    <meta name="author" content="nickgutierrez">
+
+    <title>CYOA - Template</title>
+
+</head>
+<body>
+    <div id="header">
+        <h1>Boston Tea Party</h1>
+        <h3>The Boston Tea Party.</h3>
+        <h5>By Saul Villasenor</h5>
+    </div>
+    
+    <div id="mainContent">
+        <div class="option current" id="start">
+            <p>Your name is henry. You're a loyal young man in his twenties with a beautiful wife. you're lucky enough to be a part of a rebel group with great leaders there names are  George Washington, John Adams, Thomas Jefferson, James Madison, Alexander Hamilton, James Monroe and, of course, Benjamin Franklin. 4 of these men issued a meeting and invited you because of you loyalty. When arrived at the location you see it’s a relevantly old building the second floors windows are busted it look like it’s suffered water damage. After studying the house you decided to enter you arrived at the door you knock 4 time then a short pause then another 3 time just like john adams said when you received the note. After a long pause the door opens you peek through you see a group of tall men in their late 20’s around a old table they greet you in an start discussing of an event called the throwing of the tea
+</p>
+            <p>Are you ready to play?</p>
+    
+            <div id="controls">
+                <button class="button" onclick="optionSelect('start', 'opt00')" id="startGame" type="button">Start Game</button>
+            </div>
+        </div>
+
+<!-- Option 0 -->
+
+        <div class="option hidden" id="opt00">
+            
+            <p>About the sun hit high noon you notice someone in the background they seem to be taping
+Kinda like a nervous tick you start to question who he is and how did he get invited to this meeting he noticed you staring at him he try to not make eye contact 
+Confront him or follow him?
+</p>
+    
+            <div id="controls">
+                <button class="button"onclick="optionSelect('opt00', 'opt1A')" id="button1A" type="button">Do you Question Him?</button>
+                <button class="button"onclick="optionSelect('opt00', 'opt1B')" id="<button></button>1B" type="button">Or Follow Him?</button>
+            </div>
+        </div>
+
+<!-- Option 1A -->
+
+        <div class="option hidden" id="opt1A">
+            <p>It turns out that  his wife is deathly ill she has small poxes and she might not be able to make it. he is afraid her time is near so you comfort him and he invites you into his house do you go or let him go?
+</p>
+    
+            <div id="controls">
+                <button class="button" onclick="optionSelect('opt1A', 'opt2AA')" id="button2AA" type="button">Let Him Go and Follow Him to Say get Well to his Wife</button>
+                <button class="button" onclick="optionSelect('opt1A', 'opt2AB')" id="button2AB" type="button">Let Him Go and Say Sorry</button>
+            </div>
+        </div>
+        
+<!-- Option 2AA -->
+
+                <div class="option hidden" id="opt2AA">
+                    <p>He takes you to his house you enter and you notice his house is full of odd trinkets nothing of real value but just interesting objects some are made of wood a bit of metal you ask about these object he say there memories every single trinket here was something we did together and she wanted to turn it to something physical. After a bit of talking you go and pay your respect to her and tell her best of luck. It already late do you go home and meet your wife or back to the hideout 
+
+</p>
+            
+                    <div id="controls">
+                        <button class="button" onclick="optionSelect('opt2AA', 'opt3AAA')" type="button">Go Home</button>
+                        <button class="button" onclick="optionSelect('opt2AA', 'opt3AAB')" type="button">Go Back To The Hideout</button>
+                    </div>
+                </div>
+            
+<!-- Option 3AAA -->
+
+                         <div class="option hidden" id="opt3AAA">
+                            <p>You go home you wife is sewing as you walk into the living room and to go to the kitchen to make yourself something your wife stops and explains everything you missed she explains you guys might need some disguises to hide your face so they making native american costume you succeed into dumping tea into the boston harbor history is unchanged and everything happens according to today's textbooks 
+</p>
+                        </div>
+
+<!-- Option 3AAB -->
+
+                         <div class="option hidden" id="opt3AAB">
+                            <p>As you enter the hideout you enter you hear yelling an intense argument is happening inside they argue in about if they should have disguised to raid the ships after an hour of this argument they have concluded that no you shouldn't wear disguises. The day comes as you raid the ship the crew takes note of your faces and as you succeed in capturing the ship you are later mark as a traitor and so are your friends later your are found and killed this causes an out rage in the town the revolution has started early but due to the lack of planning it is also ends early buy the british we were never got our freedom we just get turned into the britain empire  
+
+</p>
+                        </div>
+
+<!-- Option 2AB -->
+
+                <div class="option hidden" id="opt2AB">
+                    <p>You let him go and go back to the main room everyone is on a break and talking and catching up then John Adams get every ones attention to start the meeting back up again and then you start to think if you should tell them what you did and think about that person		</p>
+            
+                    <div id="controls">
+                        <button class="button" onclick="optionSelect('opt2AB', 'opt3ABA')" type="button">Tell the Founding Fathers About What Happen</button>
+                        <button class="button" onclick="optionSelect('opt2AB', 'opt3ABB')" type="button">You Keep It To Your Self</button>
+                    </div>
+                </div>
+                        
+<!-- Option 3ABA -->
+
+                        <div class="option hidden" id="opt3ABA">
+                            <p>you explain what you did and why you did it and they note they should take precautions just in case you let the meeting go and move the hide out and rescued the party for another time
+
+</p>
+                        </div>
+                
+<!-- Option 3ABB -->
+
+                         <div class="option hidden" id="opt3ABB">
+                            <p>you explain what you did and why you did it and they note they should take precautions just in case you let the meeting go and move the hide out and rescued the party for another time
+
+</p>
+                        </div>
+                      
+<!-- Option 1B -->
+  
+                        
+        <div class="option hidden" id="opt1B">
+            <p>You follow him he leads you across town into a sketchy part of town it smells awful but he ends up in front of a bad pub it’s all worn down with green mole  do you enter?</p>
+    
+            <div id="controls">
+                <button class="button" onclick="optionSelect('opt1B', 'opt2BA')" id="button2BA" type="button">Enter The Building?</button>
+                <button class="button" onclick="optionSelect('opt1B', 'opt2BB')" id="button2BB" type="button">Go Back To the Hideout and Tell The Member What You aw</button>
+            </div>
+        </div>
+        
+<!-- Option 2BA -->
+
+                <div class="option hidden" id="opt2BA">
+                    <p>You enter you you smell a unfairly stench of pee see him he look likes he is waiting for someone   in a booth you decided to sit on the other side of the booth and you hear him talking to someone he is selling information of the rebellion 
+
+
+
+</p>
+            
+                    <div id="controls">
+                        <button class="button" onclick="optionSelect('opt2BA', 'opt3BAA')" type="button">Confront Him</button>
+                        <button class="button" onclick="optionSelect('opt2BA', 'opt3BAB')" type="button">Go Back To The Hideout Tell Them What You Saw</button>
+                    </div>
+                </div>
+                
+<!-- Option 3BAA -->
+
+                         <div class="option hidden" id="opt3BAA">
+                            <p>As you confront him in the pub it turns out that that there secret hide out any question for everything you know they torture you until they find out  everything that you know you give eventually  you the information and they go and kill you rebel friends
+
+</p>
+                        </div>
+
+<!-- Option 3BAB -->
+
+                         <div class="option hidden" id="opt3BAB">
+                            <p>you go back as fast as you can and tell everyone everything you saw you track down the guy and capture him and question him for everything that he knows he gives up the information and you track down every one he told the info to and kill them all and continue the plan 
+
+</p>
+                        </div>
+            
+<!-- Option 2BB -->
+
+                <div class="option hidden" id="opt2BB">
+                    <p>you go back to the hideout you start to doubt yourself maybe you were seeing things maybe he just lives around either way you desiced to tell every when you arrive at the hideout you guy start discussing about how are you guys going to capture the ship and the strategy about that as you interrupt you tell everyone what you saw and what you were thinking about that guy. then one person say he just lives in that part of town he is a good friend of is
+</p>
+            
+                    <div id="controls">
+                        <button class="button" onclick="optionSelect('opt2BB', 'opt3BBA')" type="button">Inist That He Is Agenst The Cause</button>
+                        <button class="button" onclick="optionSelect('opt2BB', 'opt3BBB')" type="button">Say Sorry For your Miss Judgement</button>
+                    </div>
+                </div>
+                        
+<!-- Option 3BBA -->
+
+                        <div class="option hidden" id="opt3BBA">
+                            <p>you insist that he is against you and the group doesn't believe they go into a rage and accuses you for against the party decided to kill but it turns out you were right he was a spy from the british army and after your death they go in and kill all of the group then the boston tea party never happen 
+</p>
+                        </div>
+                
+<!-- Option 3BBB -->
+
+                         <div class="option hidden" id="opt3BBB">
+                            <p>You grab everyone's attention as you're in mid sentence a group the britain army come swiftly in and kills you and your friends the guy was a spy and manage to get the jump on you. in shock you freezes in place then you decide to fight you punch him in the face
+</p>
+                        </div> 
+ 
+        
+    </div>
+    
+<style>
+    
+#header{
+    background-color: #590400;
+    color: #eee;
+    width:100%;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+body{
+    background-color: #F4C68D;
+    text-align: center;
+}
+
+#mainContent{
+    padding:10px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.smaller{
+    max-width: 200px;
+}
+
+.option{
+    font-family: 'Roboto', sans-serif;
+    background-color:#D87117 ;
+    padding: 25px;
+    border-radius:1px;
+    text-align: left;
+    border-radius:4px;
+    border:solid black 2px;
+}
+
+#controls{
+    font-family: 'Oswald', sans-serif;
+    background-color: #333;
+    color: #eee;
+    width: 100%;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius:3px;
+    text-align: center;
+    border:solid black 2px;
+}
+
+@-webkit-keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+@keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+.wrapper {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.button {
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #240200;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.button:before {
+  content: "";
+  background-color: rgba(89, 4, 0, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  -webkit-transform: skewX(-45deg) translateX(0);
+          transform: skewX(-45deg) translateX(0);
+  -webkit-transition: none;
+  transition: none;
+}
+.button:hover {
+  background-color: #8B0E00;
+  color: #fff;
+  border-bottom: 4px solid #240200;
+}
+.button:hover:before {
+  -webkit-transform: skewX(-45deg) translateX(13.5em);
+          transform: skewX(-45deg) translateX(13.5em);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/********************************************************************************************
+
+          .                                                      .
+        .n                   .                 .                  n.
+  .   .dP                  dP                   9b                 9b.    .
+ 4    qXb         .       dX                     Xb       .        dXp     t
+dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
+9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
+ 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
+  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
+    `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'
+        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
+                        )b.  .dbo.dP'`v'`9b.odb.  .dX(
+                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
+                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
+                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
+                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
+                     `'      9XXXXXX(   )XXXXXXP      `'
+                              XXXX X.`v'.X XXXX
+                              XP^X'`b   d'`X^XX
+                              X. 9  `   '  P )X
+                              `b  `       '  d'
+                               `             '
+
+                    DO NOT TOUCH ANYTHING BELOW THIS LINE
+********************************************************************************************/
+
+
+.hidden{
+    display: none;
+}
+
+#current{
+    display: initial;
+}
+
+
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+} 
+    
+</style>    
+
+<script> 
+        
+        function optionSelect(cur, sel){
+            document.getElementById(cur).className= 'option hidden';
+            document.getElementById(sel).className = 'option current';
+        
+        }
+</script>
+</body>
