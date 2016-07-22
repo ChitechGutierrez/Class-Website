@@ -1,194 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html data-ng-app="demoApp">
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mr. Gutierrez's Classes</title>
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nick Gutierrez</title>
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!--Normalize CSS-->
+<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 
+<!-- Custom CSS -->
+<link type="text/css" rel="stylesheet" href="scss/style.css">
 
-    <!-- Custom CSS -->
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/responsive.css">
-
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 </head>
+<body>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+  <div class="container-fluid">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!--NavBar-->
 
-    <!-- Navigation -->
-    <nav class="landingNavbar navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Gutierrez</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#mmaII">MMAII</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#capstone">Senior Capstone</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#resources">Resources</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-default navbar-static-top" ng-controller="NavController">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="#"><img class="logo-image" src="img/tattoo.png"></a>
         </div>
-        <!-- /.container -->
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+            <li ng-class="{ active: isActive('/')}"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li ng-class="{ active: isActive('/ECS')}"><a href="#/ECS">ECS</a></li>
+                <li ng-class="{ active: isActive('/sophomore')}"><a href="#/sophomore">Sophomore Tech</a></li>
+                <li ng-class="{ active: isActive('/MMA')}"><a href="#/MMA">MMA</a></li>
+                <li ng-class="{ active: isActive('/GameDesign')}"><a href="#/GameDesign">Game Design</a></li>
+              </ul>
+            </li>
+            
+            <li ng-class="{ active: isActive('/projects')}"><a href="#/projects">Projects</a></li>
+            <li ng-class="{ active: isActive('/resources')}"><a href="#/resources">Resources</a></li>
+            <li ng-class="{ active: isActive('/about')}"><a href="#/about">Contact</a></li>
+            <li ng-class="{ active: isActive('/posts')}"><a href="#/posts">Posts</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="dateText date navbar-brand">Date</a></li>
+            <li><a class="dateText dayType navbar-brand">Day Type</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
 
-<!-- Usage Instructions:  To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page. -->
+        <!-- Placeholder for views -->
+        <div class="content" data-ng-view=""></div>
 
-    <!-- Intro Section -->
-    <section id="intro" class="landing_intro_section section ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Nick Gutierrez</h1>
-                          <h3 class="dateText date">Date</h3>
-                          <h3 class="dateText dayType">Day Type</h3>
-                    <p> My name is Nick Gutierrez, a Computer Science Teacher at Chicago Tech Academy. This website has information for current students, tutorials for students and teachers to access, and information about past projects my classes have done.<br>
-                    </p>
+  <!-- Footer -->
+  <footer>
+      <div class="row">
+          <div class="col-lg-12">
+              <h5>Copyright &copy; Nick Gutierrez 2016</h5>
+          </div>
+      </div>
+      <!-- /.row -->
+  </footer>
+  
+  </div> <!--End of Container-->
 
-                </div>
-            </div>
-        </div>
-         <a class="btn btn-default page-scroll" href="#mmaII">Find out More</a>
-    </section>
-    
-    <!-- Content Section -->
-    <section id="mmaII" class="landing_section1 section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>MMAII</h1>
-                    <p><strong>MultiMedia Arts II (MMAII)</strong> is a course that focuses on a variety of digital media, design principles and technological literacy. We will be learning the Principles of Design, Color Theory and other tools of Graphic Design. We will learn how to use image and video editing software, and a few other tools for creating high quality work. We will also work in the field of Web Design, working with HTML5, CSS3, Javascript and jQuery, in order to create high quality websites.  We also will spend time learning how to responsibly use technology, as well as learning new things about the current state of tech.</p>
-                    
+    <!-- jquery/angular -->
 
-                </div>
-            </div>
-        </div>
-       <a class="btn btn-default page-scroll" href="MMAII.html">MMAII Agenda</a>
-    </section>
-    
-    <!-- Content Section -->
-    <section id="capstone" class="landing_section2 section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Senior Capstone</h1>
-                    <p>In the <strong>ChiTech Senior Capstone</strong> students are tasked with creating and starting a business within a small group. Based on student passion and prerequisite coursework, students are placed into one of three courses: <strong>Business Startups, Graphic and Web Design, or Computer Programming.</strong></p>
-                    <p>I teach the Graphic and Web Design portion.</p>
-                    <h4>This class is cotaught with <a target="_blank" href="http://chitechentrepreneurs.weebly.com/">Jon Bull (Business)</a> and <a target="_blank" href="#">Kevin Musiorski (Programming)</a>.</h4>
-                    
-
-
-                </div>
-            </div>
-        </div>
-       <a class="btn btn-default page-scroll" href="capstone.html">Capstone Class</a>
-    </section>
-    
-    <!-- Content Section -->
-    <section id="projects" class="landing_section3 section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Projects</h1>
-                    <p>Chicago Tech Academy is a Project Based Learnign (PBL) school. Instead of tests or exams, the students must actually create something in the form of a project in order to prove their learning. For instance, my students created an Ad Campaign for a fictional product to learn more about advertising, logo design, rhetoric and video editing. The button below will take you to a list of the projects I have done with my classes.</p>
-
-                </div>
-            </div>
-        </div>
-        <a class="btn btn-default page-scroll" href="projects.html">View All Projects</a>
-    </section>
-    
-    <!-- Content Section -->
-    <section id="resources" class="landing_section4 section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Resources</h1>
-                    <p>The link below will take you to a page with resources that students and teachers can use in their own projects.</p>
-                </div>
-            </div>
-        </div>
-        <a class="btn btn-default page-scroll" href="resources.html">Resources</a>
-    </section>
-    
-    <!-- Content Section -->
-    <section id="contact" class="landing_section5 section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact and About</h1>
-                    <p>
-                        <h3>About Me</h3>
-                        I am a tech teacher at Chicago Tech Academy. I hold a B.S. in Biological Sciences, and am pursuing a Masters in Software Engineering from DePaul University. I got my start with computers at a young age, and have always been fascinated in the different uses of computers and technology. The impact that a few lines of code can have is outstanding. I went for my Undergrad in Biology and Education, but had helped pay for school by doing some design and web development work on the side. When the opportunity presented itself to teach Tech, I jumped at it, as it helped me realize where my passions really were at. <br>
-                        I am Certified in Biology, Chemistry, and Computer Science. I also have my ESL/ELL Endorsement.<br>
-                        When not at work, I can be found reading, playing games or learning as much as I can about whatever I feel like learning about.
-                    </p>
-                    
-                    
-                    <p>
-                        <h3>Contact</h3>
-                        <strong>Email: </strong><a href="mailto:ngutierrez@chicagotechacademy.org" target="_top">ngutierrez@chicagotechacademy.org</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/scrolling-nav.js"></script>
+    <!-- app javascript -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    
+    <!--Custon Scripts-->
+     <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
-
 </html>

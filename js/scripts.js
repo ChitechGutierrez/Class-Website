@@ -1,34 +1,7 @@
-// ACCORDION
-jQuery(document).ready(function() {
-	function close_accordion_section() {
-		jQuery('.accordion .accordion-section-title').removeClass('active');
-		jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
-	}
-
-	jQuery('.accordion-section-title').click(function(e) {
-		// Grab current anchor value
-		var currentAttrValue = jQuery(this).attr('href');
-
-		if (jQuery(e.target).is('.active')) {
-			close_accordion_section();
-		} else {
-			close_accordion_section();
-
-			// Add active class to section title
-			jQuery(this).addClass('active');
-			// Open up the hidden content panel
-			jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
-		}
-
-		e.preventDefault();
-	});
-});
-
-
 //Date and Day Type script
-var monthNames = [ "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December" ];
-var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var monthNames = [ "01", "02", "03", "04", "05", "06",
+    "07", "08", "09", "10", "11", "12" ];
+var dayNames= ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
 
 var newDate = new Date();
 newDate.setDate(newDate.getDate());  
@@ -39,7 +12,7 @@ var todayMonth = monthNames[newDate.getMonth()];
 var todayYear = newDate.getFullYear();
 var ScheduleCheck = (newDate.getMonth() + 1) + '/' + newDate.getDate();
 
-$('.date').html(todayDay + ", " + todayDate + ' ' + todayMonth + ' ' + todayYear);
+$('.date').html(todayDay + " " + todayMonth + '.' + todayDate + '.' + todayYear);
 
 
 //105 days of school left after Winter break
@@ -90,14 +63,13 @@ else if ( ScheduleCheck == '1/19'   // Exhibition
 		|| ScheduleCheck == '1/20'   // Exhibition
 		|| ScheduleCheck == '1/21'   // Exhibition
 		){
-  $('.dayType').html("Today has a Modified schedule");
+  $('.dayType').html("Modified schedule");
 } else if(newDate.getDay() == 1 || newDate.getDay() == 3){
-  $('.dayType').html("Today is an A day.");
+  $('.dayType').html("A day");
 } else if(newDate.getDay() == 2 || newDate.getDay() == 4){
-  $('.dayType').html("Today is a B day.");
+  $('.dayType').html("B day");
 } else if(newDate.getDay() == 5){
-  $('.dayType').html("Today is an X day.");
+  $('.dayType').html("X day");
 } else if(newDate.getDay() == 0 || newDate.getDay() == 6){
-  $('.dayType').html("No School: Today is the Weekend");
+  $('.dayType').html("No School");
 } 
-
