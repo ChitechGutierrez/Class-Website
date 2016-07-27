@@ -1,7 +1,7 @@
 To Do:
 -Add content (duh)
--Figure out daily posts
--Set up Bootstrap Modal for Bellwork ("automatic" from controllers like the posts?)
+-Format Daily Posts
+-Figure out Home Page
 
 Bugs:
 -Hamburger icons are too dark

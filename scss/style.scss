@@ -24,6 +24,68 @@ nav{
     padding:0px 15px;
 }
 
+h2.header{
+    margin-bottom:0px;
+}
+
+.pageHeader{
+    margin-top:0px;
+    padding:10px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.resourceLinks{
+    margin-bottom:5px;
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.resourceLinks a{
+    flex-grow:1;
+    display:flex;
+    text-decoration:none;
+}
+
+.resourceLinksBtn{
+    flex-grow:1;
+    margin:5px;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align:center;
+    padding:10px 0px 10px 0px;
+}
+
+.dailyPost{
+    margin-bottom:10px;
+    padding:15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.dailyPostBellringer, .dailyPostAgenda{
+    flex:1 400px;
+}
+
+.btn{
+    display: inline-block;
+}
+
+.dailyPost h3{
+    margin-top:0px;
+}
+
 footer{
     display:flex;
     flex-grow:0;
@@ -44,10 +106,17 @@ COLOR STUFF
 /* RGB */
 $color1: rgba(62, 86, 65, 1); //Gray-Asparagus (green)
 $color2: #EE8C4F; //Chestnut (reddish thing)
-//$color2: rgba(162, 73, 54, 1); //Chestnut (reddish thing)
+$color6: rgba(162, 73, 54, 1); //Chestnut (reddish thing)
 $color3: rgba(40, 43, 40, 1); //Charleston Green (dark, almost black grey)
 $color4: #159EA1; //Dark Sea Green (very light teal)
 $color5: rgba(239, 249, 240, 1); //Honeydew (offwhite)
+$grey: #eee;
+
+body{
+    background:white;
+
+    color:$color3;
+}
 
 nav, .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
     background:$color4 !important;
@@ -72,6 +141,33 @@ h2.header{
     margin-right:-15px;
 }
 
+.pageHeader{
+    background:$color6;
+    color:$color5;
+}
+
+.resourceLinksBtn{
+    background:$color2;
+    color:$color5;
+}
+
+.resourceLinksBtn:hover{
+    background:$color5;
+    color:$color4;
+}
+
+
+.dailyPost{
+    background:$color5;
+}
+
+.dailyPostDate{
+    color:$color2;
+}
+
+.dailyPostTitle{
+    color:$color4;
+}
 
 footer{
     background:$color3;
