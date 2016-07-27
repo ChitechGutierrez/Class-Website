@@ -73,3 +73,11 @@ else if ( ScheduleCheck == '1/19'   // Exhibition
 } else if(newDate.getDay() == 0 || newDate.getDay() == 6){
   $('.dayType').html("No School");
 } 
+
+// Force Navbar to recollapse when clicking a link
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+});
+
