@@ -1,6 +1,6 @@
 // home controller
 demoApp.controller('HomeController', function ($scope) {
-    $scope.header = "Mr. Gutierrez's Website. Currently down for repairs.";
+    $scope.header = "Mr. Gutierrez's Website.";
     
     
 });
