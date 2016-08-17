@@ -57,31 +57,31 @@ demoApp.controller('PostController', function ($scope) {
 });
 
 
-// Freshman controller
-demoApp.controller('ECSController', function ($scope) {
-    $scope.header = "Exploring Computer Science Class";
-});
+// // Freshman controller
+// demoApp.controller('ECSController', function ($scope) {
+//     $scope.header = "Exploring Computer Science Class";
+// });
 
 // Sophomore controller
 demoApp.controller('SophomoreController', function ($scope) {
     $scope.header = "Sophomore Tech";
-    $scope.description = "Integer facilisis aliquet leo, non sodales nibh eleifend ac. Donec risus tellus, porttitor sit amet gravida non, ullamcorper in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.";
+    $scope.description = "COURSE DESCRIPTION";
     
     googleSpreadsheetAgenda("1HrBnmIoTfrhv6VjZJXf6j607XEbt4BvO7nv97GR_lng");
 });
 
 // MMA controller
 demoApp.controller('MMAController', function ($scope) {
-    $scope.header = "MultiMedia Arts";
-    $scope.description = "Integer facilisis aliquet leo, non sodales nibh eleifend ac. Donec risus tellus, porttitor sit amet gravida non, ullamcorper in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.";
+    $scope.header = "MultiMedia Arts I";
+    $scope.description = "COURSE DESCRIPTION";
     
      googleSpreadsheetAgenda("16GandAlShHNss90FBMCjPLj8XuFVTBH8kwXgjkVNoUU");
 });
 
 // Game Design controller
 demoApp.controller('GameDesignController', function ($scope) {
-    $scope.header = "Game Development";
-    $scope.description = "Integer facilisis aliquet leo, non sodales nibh eleifend ac. Donec risus tellus, porttitor sit amet gravida non, ullamcorper in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.";
+    $scope.header = "MultiMedia Arts III";
+    $scope.description = "COURSE DESCRIPTION";
     
     googleSpreadsheetAgenda("1rhDVdhXgyl9pm1I77ft1BGLG275aPPDpbSMhr-yBX68");
 });
@@ -91,9 +91,31 @@ demoApp.controller('ProjectsController', function ($scope) {
     $scope.header = "Past Projects";
 });
 
+    // butterflyEffect controller
+    demoApp.controller('butterflyEffectController', function ($scope) {
+        $scope.header = "The Butterfly Effect";
+    });
+    
+    // pixelatedLife controller
+    demoApp.controller('pixelatedLifeController', function ($scope) {
+        $scope.header = "Pixelated Live";
+    });
+    
+    // portfolioProject controller
+    demoApp.controller('portfolioProjectController', function ($scope) {
+        $scope.header = "Portfolio Project";
+    });
+    
+    // backToTheirFutures controller
+    demoApp.controller('backToTheirFuturesController', function ($scope) {
+        $scope.header = "backToTheirFutures Project";
+    });
+
+
 // Resources controller
 demoApp.controller('ResourcesController', function ($scope) {
     $scope.header = "Resources";
+     $scope.description = "Here you will find resources that can be used by virtually any student in the school, as well as for teachers. These are useful tools I have found, or they are resources that I created for my students.";
 });
 
 

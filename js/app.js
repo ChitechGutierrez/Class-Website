@@ -20,11 +20,11 @@ demoApp.config(function ($routeProvider) {
             controller: 'PostController',
             templateUrl: 'views/posts.html'
         })
-    .when('/ECS',
-        {
-            controller: 'ECSController',
-            templateUrl: 'views/ECS.html'
-        })
+    // .when('/ECS',
+    //     {
+    //         controller: 'ECSController',
+    //         templateUrl: 'views/ECS.html'
+    //     })
     .when('/sophomore',
         {
             controller: 'SophomoreController',
@@ -49,6 +49,26 @@ demoApp.config(function ($routeProvider) {
         {
             controller: 'ResourcesController',
             templateUrl: 'views/resources.html'
+        })
+        .when('/butterflyEffect',
+        {
+            controller: 'butterflyEffectController',
+            templateUrl: 'views/pastProjects/butterflyEffect.html'
+        })
+        .when('/pixelatedLife',
+        {
+            controller: 'pixelatedLifeController',
+            templateUrl: 'views/pastProjects/pixelatedLife.html'
+        })
+        .when('/portfolioProject',
+        {
+            controller: 'portfolioProjectController',
+            templateUrl: 'views/pastProjects/portfolioProject.html'
+        })
+        .when('/backToTheirFuturesProject',
+        {
+            controller: 'backToTheirFuturesProjectController',
+            templateUrl: 'views/pastProjects/backToTheirFutures.html'
         })
         
     .otherwise({ redirectTo: '/' });

@@ -2,7 +2,7 @@
   padding: 0px; }
 
 nav {
-  padding: 0px 15px; }
+  padding: 0px 40px; }
 
 .logo {
   height: 40px;
@@ -31,6 +31,19 @@ h2.header {
   -moz-border-radius-bottomleft: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
+
+.pageBody {
+  margin: 0px 10px 10px 10px; }
+
+#projects > div > div {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.gallery_thumbnail {
+  max-width: 125px;
+  max-height: 125px; }
 
 .resourceLinks {
   margin-bottom: 5px;
@@ -72,6 +85,16 @@ h2.header {
 .dailyPost h3 {
   margin-top: 0px; }
 
+.pixelatedLifeGallery {
+  text-align: center; }
+
+.resourcePageLinks {
+  margin: 20px;
+  padding: 10px; }
+
+.contact-info-label {
+  font-weight: bold; }
+
 footer {
   display: flex;
   flex-grow: 0;
@@ -79,7 +102,8 @@ footer {
   align-items: center;
   width: 100%;
   background: #eee;
-  padding: 20px; }
+  padding: 20px;
+  margin-top: 20px; }
 
 /**********************************
 
@@ -102,6 +126,25 @@ nav, .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, #bs-example-navbar-collapse-1 > ul:nth-child(1) > li.dropdown.open > a {
   color: #282b28 !important; }
 
+.icon-bar {
+  background: #eff9f0 !important; }
+
+#bs-example-navbar-collapse-1 > ul > li.dropdown.open > ul > li > a {
+  color: #eff9f0; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: #159EA1; }
+
+#bs-example-navbar-collapse-1 > ul > li.dropdown.open > ul > li > a:hover {
+  color: #282b28; }
+
+#bs-example-navbar-collapse-1 > ul > li.dropdown.open > ul > li.active > a {
+  color: #282b28 !important;
+  background: #eff9f0 !important; }
+
+.dropdown-menu {
+  background: #159EA1; }
+
 h2.header {
   background: #EE8C4F;
   color: #eff9f0;
@@ -122,6 +165,9 @@ h2.header {
   background: #eff9f0;
   color: #159EA1; }
 
+.postB {
+  background: #eee; }
+
 .dailyPost {
   background: #eff9f0; }
 
@@ -130,6 +176,13 @@ h2.header {
 
 .dailyPostTitle {
   color: #159EA1; }
+
+div.link_list > a {
+  background: #282b28;
+  color: #eff9f0; }
+
+.resourcePageLinks {
+  background: #eee; }
 
 footer {
   background: #282b28;
