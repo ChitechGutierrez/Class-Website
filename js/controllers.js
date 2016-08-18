@@ -22,35 +22,35 @@ demoApp.controller('PostController', function ($scope) {
         "image": "http://placehold.it/100x100",
         "author": "bob",
         "intro": "Aenean lacinia bibendum nulla sed consectetur",
-        "extended": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+        "extended": "STUFF."
     },{
         "id": "2",
         "title": "Porta Felis Euismod Semper",
         "image": "http://placehold.it/100x100",
         "author": "tom",
         "intro": "Integer facilisis aliquet leo",
-        "extended": "Integer facilisis aliquet leo, non sodales nibh eleifend ac. Donec risus tellus, porttitor sit amet gravida non, ullamcorper in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi."
+        "extended": "STUFF."
     },{
         "id": "3",
         "title": "Tellus Vehicula Mattis Aenean",
         "image": "http://placehold.it/100x100",
         "author": "jill",
         "intro": "klasjdflk ljdsfalk sdaf",
-        "extended": "Integer facilisis aliquet leo, non sodales nibh eleifend ac. Donec risus tellus, porttitor sit amet gravida non, ullamcorper in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+        "extended": "STUFF."
     },{
         "id": "4",
         "title": "Vulputate Ornare Justo",
         "image": "http://placehold.it/100x100",
         "author": "marge",
         "intro": "klasjdflk ljdsfalk sdaf",
-        "extended": "Integer facilisis aliquet leo, non sodales nibh eleifend ac. Donec risus tellus, porttitor sit amet gravida non, ullamcorper in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        "extended": "STUFF."
     },{
         "id": "5",
         "title": "Malesuada Vulputate Dolor Commodo",
         "image": "http://placehold.it/100x100",
         "author": "david",
         "intro": "klasjdflk ljdsfalk sdaf",
-        "extended": "Integer facilisis aliquet leo, non sodales nibh eleifend ac. Donec risus tellus, porttitor sit amet gravida non, ullamcorper in velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi."
+        "extended": "STUFF."
     }];
 
 
@@ -65,7 +65,7 @@ demoApp.controller('PostController', function ($scope) {
 // Sophomore controller
 demoApp.controller('SophomoreController', function ($scope) {
     $scope.header = "Sophomore Tech";
-    $scope.description = "COURSE DESCRIPTION";
+    $scope.description = "The Logic Branch of the Sophomore Tech class centers around the introduction of computer logic and computer science principles. We will learn basic programming using Scratch as a means of introduction to JavaScript, as well as HTML and CSS. We also will explore current events in technology and how they affect the students.";
     
     googleSpreadsheetAgenda("1HrBnmIoTfrhv6VjZJXf6j607XEbt4BvO7nv97GR_lng");
 });
@@ -73,7 +73,7 @@ demoApp.controller('SophomoreController', function ($scope) {
 // MMA controller
 demoApp.controller('MMAController', function ($scope) {
     $scope.header = "MultiMedia Arts I";
-    $scope.description = "COURSE DESCRIPTION";
+    $scope.description = "MultiMedia Arts I (MMA1) is a junior level tech class that explores many differnet types of digital media production. We will work with professional level software used in image editing, video editing, sound design, logo design, 3D modeling and page layout. The goal is to expose the students to a variety of different digital media types so they have the basic skills needed in their other PBL classes. We also will explore current events in technology and how they affect the students.";
     
      googleSpreadsheetAgenda("16GandAlShHNss90FBMCjPLj8XuFVTBH8kwXgjkVNoUU");
 });
@@ -81,7 +81,7 @@ demoApp.controller('MMAController', function ($scope) {
 // Game Design controller
 demoApp.controller('GameDesignController', function ($scope) {
     $scope.header = "MultiMedia Arts III";
-    $scope.description = "COURSE DESCRIPTION";
+    $scope.description = "MultiMedia Arts III (MMA3) is a senior level tech class that focuses on the different parts that go into media projects like animated movies or video games. The core of this class is centered around creating the different art pieces involved with creating a video game. We will learn about Sprite Animation, 3D Modeling and animation, and audio, then putting them together into a finished video game product using the Unity gaming engine. NOTE: This is NOT a game development course, so we will not be focusing on programming.  However, we will be doing some simple programming as a means to assemble the multimedia video game project into a cohesive unit. We also will explore current events in technology and how they affect the students.";
     
     googleSpreadsheetAgenda("1rhDVdhXgyl9pm1I77ft1BGLG275aPPDpbSMhr-yBX68");
 });
