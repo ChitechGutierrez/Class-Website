@@ -30,15 +30,10 @@ demoApp.config(function ($routeProvider) {
             controller: 'SophomoreController',
             templateUrl: 'views/sophomore.html'
         })
-    .when('/MMA',
+    .when('/MMA3',
         {
-            controller: 'MMAController',
-            templateUrl: 'views/MMA.html'
-        })
-    .when('/GameDesign',
-        {
-            controller: 'GameDesignController',
-            templateUrl: 'views/GameDesign.html'
+            controller: 'MMA3Controller',
+            templateUrl: 'views/MMA3.html'
         })
     .when('/projects',
         {

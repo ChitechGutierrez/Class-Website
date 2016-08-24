@@ -71,19 +71,11 @@ demoApp.controller('SophomoreController', function ($scope) {
 });
 
 // MMA controller
-demoApp.controller('MMAController', function ($scope) {
-    $scope.header = "MultiMedia Arts I";
-    $scope.description = "MultiMedia Arts I (MMA1) is a junior level tech class that explores many differnet types of digital media production. We will work with professional level software used in image editing, video editing, sound design, logo design, 3D modeling and page layout. The goal is to expose the students to a variety of different digital media types so they have the basic skills needed in their other PBL classes. We also will explore current events in technology and how they affect the students.";
-    
-     googleSpreadsheetAgenda("16GandAlShHNss90FBMCjPLj8XuFVTBH8kwXgjkVNoUU");
-});
-
-// Game Design controller
-demoApp.controller('GameDesignController', function ($scope) {
+demoApp.controller('MMA3Controller', function ($scope) {
     $scope.header = "MultiMedia Arts III";
     $scope.description = "MultiMedia Arts III (MMA3) is a senior level tech class that focuses on the different parts that go into media projects like animated movies or video games. The core of this class is centered around creating the different art pieces involved with creating a video game. We will learn about Sprite Animation, 3D Modeling and animation, and audio, then putting them together into a finished video game product using the Unity gaming engine. NOTE: This is NOT a game development course, so we will not be focusing on programming.  However, we will be doing some simple programming as a means to assemble the multimedia video game project into a cohesive unit. We also will explore current events in technology and how they affect the students.";
     
-    googleSpreadsheetAgenda("1rhDVdhXgyl9pm1I77ft1BGLG275aPPDpbSMhr-yBX68");
+     googleSpreadsheetAgenda("1rhDVdhXgyl9pm1I77ft1BGLG275aPPDpbSMhr-yBX68");
 });
 
 // Projects controller
