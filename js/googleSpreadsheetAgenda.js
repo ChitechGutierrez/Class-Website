@@ -1,5 +1,22 @@
 function googleSpreadsheetAgenda (spreadsheetID){
-	var bellworkButton = `
+	
+	    
+	     // ID of the Google Spreadsheet
+	     //var spreadsheetID = "16GandAlShHNss90FBMCjPLj8XuFVTBH8kwXgjkVNoUU";
+	     
+	     // Make sure it is public or set to Anyone with link can view 
+	     var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+	    
+	     $.getJSON(url, function(data) {
+	     
+	      var entry = data.feed.entry;
+	     
+	      $(entry).each(function(){
+	          var date = '<div class="dailyPostBellringer"><h3 class="dailyPostDate">'+this.gsx$date.$t;
+	          var dayType = ' <small class="muted">'+this.gsx$daytype.$t+'</small></h3>';
+	          
+	          if (this.gsx$isbellringerquestion.$t== "question"){
+	          	var bellworkButton = `
 	            <!-- Button trigger modal -->
 	              <button type="button" class="btn btn-default bellworkButton" data-toggle="modal" data-target="#myModal">
 	                Form
@@ -23,21 +40,11 @@ function googleSpreadsheetAgenda (spreadsheetID){
 	                </div>
 	              </div>
 	    `;
-	    
-	     // ID of the Google Spreadsheet
-	     //var spreadsheetID = "16GandAlShHNss90FBMCjPLj8XuFVTBH8kwXgjkVNoUU";
-	     
-	     // Make sure it is public or set to Anyone with link can view 
-	     var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
-	    
-	     $.getJSON(url, function(data) {
-	     
-	      var entry = data.feed.entry;
-	     
-	      $(entry).each(function(){
-	          var date = '<div class="dailyPostBellringer"><h3 class="dailyPostDate">'+this.gsx$date.$t;
-	          var dayType = ' <small class="muted">'+this.gsx$daytype.$t+'</small></h3>';
-	          var bellringer = '<div><span class="dailyPostTitle" style="font-size:1.3em;">Bellwork: </span>' +this.gsx$bellringer.$t+ bellworkButton+'</div>';
+	          } else if (this.gsx$isbellringerquestion.$t== "task"){
+	          	var bellworkButton = "";
+	          }
+	          
+	          var bellringer = '<div><span class="dailyPostTitle" style="font-size:1.3em;">Bellwork: </span>' +this.gsx$bellringer.$t+ bellworkButton +'</div>';
 	          var lessonObjective = '<p><span class="dailyPostTitle" style="font-size:1.3em;">Objective: </span></p><p>'+this.gsx$lessonobjective.$t+'</p>';
 	          var studentGoal = '<p><span class="dailyPostTitle" style="font-size:1.3em;">Student Goal: </span>'+this.gsx$studentgoal.$t+'</p>';
 	          
