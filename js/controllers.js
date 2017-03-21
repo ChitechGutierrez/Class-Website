@@ -65,7 +65,7 @@ demoApp.controller('PostController', function ($scope) {
 // Sophomore controller
 demoApp.controller('SophomoreController', function ($scope) {
     $scope.header = "Sophomore Tech";
-    $scope.description = "The Logic Branch of the Sophomore Tech class centers around the introduction of computer logic and computer science principles. We will learn basic programming using Scratch as a means of introduction to JavaScript, as well as HTML and CSS. We also will explore current events in technology and how they affect the students.";
+    $scope.description = "The Quarter long Logic Branch of the Sophomore Tech class centers around the introduction of computer logic and computer science principles. We will learn basic programming using Processing (www.processing.org), a Java library centered around visual output. We also will explore current events in technology and how they affect the students.";
     
     googleSpreadsheetAgenda("1HrBnmIoTfrhv6VjZJXf6j607XEbt4BvO7nv97GR_lng");
 });
