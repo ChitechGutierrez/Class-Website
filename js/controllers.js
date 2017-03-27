@@ -83,32 +83,45 @@ demoApp.controller('ProjectsController', function ($scope) {
     $scope.header = "Past Projects";
 });
 
-    // butterflyEffect controller
-    demoApp.controller('butterflyEffectController', function ($scope) {
-        $scope.header = "The Butterfly Effect";
-    });
-    
-    // pixelatedLife controller
-    demoApp.controller('pixelatedLifeController', function ($scope) {
-        $scope.header = "Pixelated Live";
-    });
-    
-    // portfolioProject controller
-    demoApp.controller('portfolioProjectController', function ($scope) {
-        $scope.header = "Portfolio Project";
-    });
-    
-    // backToTheirFutures controller
-    demoApp.controller('backToTheirFuturesController', function ($scope) {
-        $scope.header = "backToTheirFutures Project";
-    });
+// alphaGameProjectController
+demoApp.controller('alphaGameProjectController', function ($scope) {
+    $scope.header = "Alpha Game Project";
+});
 
+//  drawingWithCodeController
+demoApp.controller('drawingWithCodeController', function ($scope) {
+    $scope.header = "Drawing With Code Project";
+});
+
+// superMarioRemixController
+demoApp.controller('superMarioRemixController', function ($scope) {
+    $scope.header = "Super Mario Remix Project";
+});
+
+// butterflyEffect controller
+demoApp.controller('butterflyEffectController', function ($scope) {
+    $scope.header = "The Butterfly Effect";
+});
+
+// pixelatedLife controller
+demoApp.controller('pixelatedLifeController', function ($scope) {
+    $scope.header = "Pixelated Life";
+});
+
+// portfolioProject controller
+demoApp.controller('portfolioProjectController', function ($scope) {
+    $scope.header = "Portfolio Project";
+});
+
+    
 
 // Resources controller
 demoApp.controller('ResourcesController', function ($scope) {
     $scope.header = "Resources";
-     $scope.description = "Here you will find resources that can be used by virtually any student in the school, as well as for teachers. These are useful tools I have found, or they are resources that I created for my students.";
+    $scope.description = "Here you will find resources that can be used by virtually any student in the school, as well as for teachers. These are useful tools I have found, or they are resources that I created for my students.";
 });
+
+
 
 
 //Sets the Active Link for the page

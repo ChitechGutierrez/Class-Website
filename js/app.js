@@ -5,6 +5,7 @@ var demoApp = angular.module('demoApp', []);
 demoApp.config(function ($routeProvider) {
 
    $routeProvider
+   
     .when('/',
         {
             controller: 'HomeController',
@@ -45,27 +46,38 @@ demoApp.config(function ($routeProvider) {
             controller: 'ResourcesController',
             templateUrl: 'views/resources.html'
         })
-        .when('/butterflyEffect',
-        {
-            controller: 'butterflyEffectController',
-            templateUrl: 'views/pastProjects/butterflyEffect.html'
-        })
-        .when('/pixelatedLife',
-        {
-            controller: 'pixelatedLifeController',
-            templateUrl: 'views/pastProjects/pixelatedLife.html'
-        })
-        .when('/portfolioProject',
-        {
-            controller: 'portfolioProjectController',
-            templateUrl: 'views/pastProjects/portfolioProject.html'
-        })
-        .when('/backToTheirFuturesProject',
-        {
-            controller: 'backToTheirFuturesProjectController',
-            templateUrl: 'views/pastProjects/backToTheirFutures.html'
-        })
-        
+    .when('/butterflyEffect',
+    {
+        controller: 'butterflyEffectController',
+        templateUrl: 'views/pastProjects/butterflyEffect.html'
+    })
+    .when('/pixelatedLife',
+    {
+        controller: 'pixelatedLifeController',
+        templateUrl: 'views/pastProjects/pixelatedLife.html'
+    })
+    .when('/portfolioProject',
+    {
+        controller: 'portfolioProjectController',
+        templateUrl: 'views/pastProjects/portfolioProject.html'
+    })
+    .when('/superMarioRemix',
+    {
+        controller: 'superMarioRemixController',
+        templateUrl: 'views/pastProjects/superMarioRemix.html'
+    })
+    
+    .when('/drawingWithCode',
+    {
+        controller: 'drawingWithCodeController',
+        templateUrl: 'views/pastProjects/drawingWithCode.html'
+    })
+       
+    .when('/alphaGameProject',
+    {
+        controller: 'alphaGameProjectController',
+        templateUrl: 'views/pastProjects/alphaGameProject.html'
+    }) 
     .otherwise({ redirectTo: '/' });
 
 });
